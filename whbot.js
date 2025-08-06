@@ -63,7 +63,7 @@ async function startSock() {
       );
     }
 
-    const child = spawn('./tgpt4', ['--provider', 'gemini', '--key', 'AIzaSyCKAsPVJVnJ3VvhyY5kF-bmEMU93bZnB3U', '-w']);
+    const child = spawn('./tgpt4', ['--provider', 'pollinations', '-w']);
     let output = '';
 
     child.stdout.on('data', (data) => { output += data.toString(); });
